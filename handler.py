@@ -2,6 +2,7 @@ import pickle
 import pandas as pd
 from flask import Flask, request, Response
 from healthinsurance.HealthInsurance import HealthInsurance
+import os
 
 # carregar o modelo atual
 modelo = pickle.load(open ('model/modelo_health_insurace_cross_sell.pkl', 'rb') )
