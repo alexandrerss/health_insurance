@@ -5,13 +5,13 @@ import inflection
 
 class HealthInsurance (object):
     def __init__ (self):
-        self.home_path = "C:/Estudos/Comunidade_DS/projetos/PA004/"
-        self.annual_premium_scaler =            pickle.load(open(self.home_path + 'src/features/annual_premium_scaler.pkl', 'rb'))
-        self.age_scaler =                       pickle.load(open(self.home_path + 'src/features/age_scaler.pkl', 'rb'))
-        self.vintage_scaler =                   pickle.load(open(self.home_path + 'src/features/vintage_scaler.pkl','rb'))
-        self.target_encode_gender_scaler =      pickle.load(open(self.home_path + 'src/features/target_encode_gender_scaler.pkl','rb'))
-        self.target_encode_region_code_scaler = pickle.load(open(self.home_path + 'src/features/target_encode_region_code_scaler.pkl','rb'))
-        self.policy_sales_channel_scaler =      pickle.load(open(self.home_path + 'src/features/freq_policy_sales_channel_scaler.pkl','rb'))
+        self.home_path = ""
+        self.annual_premium_scaler =            pickle.load(open(self.home_path + 'features/annual_premium_scaler.pkl', 'rb'))
+        self.age_scaler =                       pickle.load(open(self.home_path + 'features/age_scaler.pkl', 'rb'))
+        self.vintage_scaler =                   pickle.load(open(self.home_path + 'features/vintage_scaler.pkl','rb'))
+        self.target_encode_gender_scaler =      pickle.load(open(self.home_path + 'features/target_encode_gender_scaler.pkl','rb'))
+        self.target_encode_region_code_scaler = pickle.load(open(self.home_path + 'features/target_encode_region_code_scaler.pkl','rb'))
+        self.policy_sales_channel_scaler =      pickle.load(open(self.home_path + 'features/freq_policy_sales_channel_scaler.pkl','rb'))
 
     def limpeza_dados(self,df1):
 

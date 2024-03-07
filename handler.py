@@ -4,8 +4,7 @@ from flask import Flask, request, Response
 from healthinsurance.HealthInsurance import HealthInsurance
 
 # carregar o modelo atual
-path = "C:/Estudos/Comunidade_DS/projetos/PA004/"
-modelo = pickle.load(open (path + 'src/model/modelo_health_insurace_cross_sell.pkl', 'rb') )
+modelo = pickle.load(open ('model/modelo_health_insurace_cross_sell.pkl', 'rb') )
 
 # initialize API
 app = Flask( __name__ )
