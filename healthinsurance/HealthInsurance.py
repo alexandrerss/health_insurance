@@ -13,9 +13,7 @@ class HealthInsurance (object):
         self.target_encode_region_code_scaler = pickle.load(open(self.home_path + 'features/target_encode_region_code_scaler.pkl','rb'))
         self.policy_sales_channel_scaler =      pickle.load(open(self.home_path + 'features/freq_policy_sales_channel_scaler.pkl','rb'))
 
-    def limpeza_dados(self,df1):
-
-        # Renomear as colunas para mdoelo snakecase
+    def renomear_colunas( self,df1 ):
         cols_old = df1.columns
         snakecase = lambda x: inflection.underscore( x )
         cols_new = list( map( snakecase, cols_old ) )
@@ -72,3 +70,4 @@ class HealthInsurance (object):
         original_data['prediction'] = pred[:,1].tolist()
             
         return original_data.to_json( orient='records', date_format='iso' ) 
+    

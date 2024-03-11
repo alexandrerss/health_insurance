@@ -25,7 +25,7 @@ def healthinsurance_predict():
         pipeline = HealthInsurance()
 
         # data cleaning
-        df1 = pipeline.limpeza_dados( test_raw )
+        df1 = pipeline.renomear_colunas( test_raw )
 
         # feature engineering
         df2 = pipeline.feature_engineering( df1 )
