@@ -1,5 +1,7 @@
 # Venda Cruzada de Seguro de Carros e Saúde
 
+![](img/capa.jpg)
+
 Este projeto apresenta uma seguradora que vende seguros de saúde e agora busca prever o interesse dos segurados em seu novo produto de seguro veicular. O Objetivo deste modelo é para direcionar estratégias de comunicação e maximizar a receita, identificando os clientes mais propensos à aquisição deste novo seguro.
 
 # 1. Problema de Negócio
@@ -63,15 +65,11 @@ No primeiro ciclo do projeto, foram testados quatro algoritmos para escolher o m
 
 Segue abaixo o desempenho apresentado:
 
-Nome | Precisão | Recall
------------- | -------------
-Random Forest Classifier| 0.333667 | 0.144684 |  
-KNN Classifier| 0.320670 | 0.139048 | 
-XGBoost Classifier| 0.318420 |	0.138073 |
-Logistic Regression| 0.249188 | 0.108052 |
+![](img/models.png)
 
+Apesar dos resultados encontrados nesta análise foi decidido seuir com o modelo de XGBoost Classifier devido aos valores apresentados no fine tunning:
 
-De acordo com o resultado apresentado, o modelo escolhido foi o KNN e o motivo foi por apresentar um resultado similar aos outros algoritmos porém o seu modelo ocupa menos espaço em disco e ao seu tempo de treinamento mais curto do que os demais.
+![](img/model_prd.png)
 
 # 4. Produto Final
 
