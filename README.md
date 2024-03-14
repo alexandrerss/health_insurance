@@ -79,6 +79,8 @@ Essa aplicação gera uma lista de clientes com seu índice de propensão de com
 
 Acesse esta planilha neste [link](https://docs.google.com/spreadsheets/d/1nPtFNaulvtganpiat6vAZkgk6nFXjt5yUrU9ue76TNk/edit?usp=sharing)
 
+![](img/PA004.mp4)
+
 
 
 
