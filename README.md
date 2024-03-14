@@ -65,10 +65,10 @@ Segue abaixo o desempenho apresentado:
 
 Nome | Precisão | Recall
 ------------ | -------------
-Random Forest Classifier | 0.333667	| 0.144684 |  
-KNN Classifier | 0.320670 | 0.139048 | 
-XGBoost Classifier | 0.318420 |	0.138073 |
-Logistic Regression | 0.249188 | 0.108052 |
+Random Forest Classifier| 0.333667 | 0.144684 |  
+KNN Classifier| 0.320670 | 0.139048 | 
+XGBoost Classifier| 0.318420 |	0.138073 |
+Logistic Regression| 0.249188 | 0.108052 |
 
 
 De acordo com o resultado apresentado, o modelo escolhido foi o KNN e o motivo foi por apresentar um resultado similar aos outros algoritmos porém o seu modelo ocupa menos espaço em disco e ao seu tempo de treinamento mais curto do que os demais.
@@ -81,10 +81,7 @@ Essa aplicação gera uma lista de clientes com seu índice de propensão de com
 
 Acesse esta planilha neste [link](https://docs.google.com/spreadsheets/d/1nPtFNaulvtganpiat6vAZkgk6nFXjt5yUrU9ue76TNk/edit?usp=sharing)
 
-Segue abaixo uma amostra como utilizar este link para fazer a previsão de clientes.
 
-<img src="https://user-images.githubusercontent.com/95532957/204161999-a38a8305-51b6-4a53-b4e8-e8dd2d38efc0.gif" title="Exemplo de uso" 
-lign="center" height="400" class="center"/>
 
 
 
