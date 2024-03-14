@@ -30,6 +30,7 @@ class HealthInsurance (object):
         df2['vehicle_damage'] = df2['vehicle_damage'].apply(lambda x: 1 if x == 'Yes' else 0)
 
         return df2
+      
 
     def preparacao (self,df5):
 
@@ -47,16 +48,12 @@ class HealthInsurance (object):
         
         # region_code (eu achava que era rescaling) -  Target Encoding / Frequency Encoding
         df5.loc[:,'region_code'] = df5['region_code'].map(self.target_encode_region_code_scaler)
-        
-        # vehicle_age (variavel categórica)  One Hot Encoding / Order Encoding / Frequency Encoding
-        df5 = pd.get_dummies(df5, prefix='vehicle_age', columns=['vehicle_age'])
 
-        # policy_sales_channel (eu achava que era rescaling) - Frequency Encoding / Target Encoding
+        # policy_sales_channel
         df5.loc[:,'policy_sales_channel'] = df5['policy_sales_channel'].map(self.policy_sales_channel_scaler)
         
         #Feature Selection
-        cols_selected = ['annual_premium', 'vintage', 'age', 'region_code', 'vehicle_damage', 'previously_insured',
-                 'policy_sales_channel']
+        cols_selected = ['annual_premium', 'vintage', 'age', 'region_code', 'vehicle_damage', 'previously_insured', 'policy_sales_channel']
         
         df5 = df5.fillna(0)
 
