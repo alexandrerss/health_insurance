@@ -73,7 +73,7 @@ Apesar dos resultados encontrados nesta análise foi decidido seuir com o modelo
 
 # 4. Produto Final
 
-Para o produto final, foi desenvolvido uma planilha no Google Sheets com dados dos clientes  é possível acessar o modelo por meio da API e realizar previsões usando uma aplicação desenvolvida no Apps Script.
+Para o produto final, foi desenvolvido uma planilha no Google Sheets com dados dos clientes sendo possível acessar o modelo por meio da API e obter informaçoes em porcentagem de chanches que cada cliente possa ter interesse em adquirir o seguro automotivo usando uma aplicação desenvolvida no Apps Script.
 
 Essa aplicação gera uma lista de clientes com seu índice de propensão de compra, classificando-os de acordo com os clientes mais propensos no topo da lista.
 
