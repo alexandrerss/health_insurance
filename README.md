@@ -64,11 +64,12 @@ No primeiro ciclo do projeto, foram testados quatro algoritmos para escolher o m
 Segue abaixo o desempenho apresentado:
 
 Nome | Precisão | Recall
+------------ | -------------
 Random Forest Classifier | 0.333667	| 0.144684 |  
 KNN Classifier | 0.320670 | 0.139048 | 
 XGBoost Classifier | 0.318420 |	0.138073 |
 Logistic Regression | 0.249188 | 0.108052 |
------------- | -------------
+
 
 De acordo com o resultado apresentado, o modelo escolhido foi o KNN e o motivo foi por apresentar um resultado similar aos outros algoritmos porém o seu modelo ocupa menos espaço em disco e ao seu tempo de treinamento mais curto do que os demais.
 
